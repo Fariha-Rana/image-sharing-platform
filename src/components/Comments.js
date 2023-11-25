@@ -81,7 +81,7 @@ const Comments = ({likes, comments, isLiked, documentIdentity }) => {
     <Box maxW="600px" w="100%" overflow="hidden">
   <Flex p={2} justify="space-between" align="center">
     <Flex align="center">
-      <IconButton size={"xs"} icon={<AiFillHeart />} mr={2} colorScheme={isLiked ? "red" : "teal"} onClick={updateLikes} />
+      <IconButton size={"xs"} icon={<AiFillHeart />} mr={2} colorScheme={isLiked ? "teal" : "teal"} onClick={updateLikes} />
       <Text fontSize={"xs"}>{likes ? likes + " likes" : "0 likes"}</Text>
     </Flex>
     <Flex align="center">
