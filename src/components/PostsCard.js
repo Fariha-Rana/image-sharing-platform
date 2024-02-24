@@ -48,10 +48,7 @@ const PostCard = () => {
     };
   }, []);
 
-  useEffect(() => {
-    loadPosts();
-  }, []);
-
+  
   const loadPosts = async () => {
     try {
       await postDatabase.loadPostData();
@@ -61,6 +58,10 @@ const PostCard = () => {
       setError(error.message);
     }
   };
+  
+  useEffect(() => {
+    loadPosts();
+  }, []);
 
   if (error) {
     return <Alert>{error.message}</Alert>;
@@ -81,12 +82,12 @@ const PostCard = () => {
           boxShadow={"lg"}
           bg={"white"}
         >
-          <Flex mb={4} alignItems={"center"} justifyContent={"center"}>
+          <Flex mb={4} alignItems={"center"} justifyContent={"center"}  style={{ width: "50%", height: "50%"}}>
             <Image
               src={post.imageurl}
               alt="Post Image"
-              width="100%"
-              height={"100%"}
+              width={400}
+              height={400}
               style={{ width: "50%", height: "50%", objectFit: "cover" }}
             />
           </Flex>
