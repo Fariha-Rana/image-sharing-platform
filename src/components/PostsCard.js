@@ -52,13 +52,13 @@ const PostCard = () => {
   const loadPosts = async () => {
     try {
       await postDatabase.loadPostData();
-      const postData = await postDatabase.getPostData();
+      const postData = postDatabase.getPostData();
       setPosts(postData);
     } catch (error) {
       setError(error.message);
     }
   };
-  
+
   useEffect(() => {
     loadPosts();
   }, []);

@@ -1,4 +1,4 @@
-# website-url = https://image-sharing-platform-19xf.vercel.app
+# website-url = [https://image-sharing-platform-19xf.vercel.app]
 
 ## Image Sharing Platform
 
