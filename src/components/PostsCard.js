@@ -69,7 +69,7 @@ const PostCard = () => {
 
   return (
     <>
-      {posts.map((post, index) => (
+      {posts?.map((post, index) => (
         <Box
           maxWidth={"90vw"}
           alignItems={"center"}
