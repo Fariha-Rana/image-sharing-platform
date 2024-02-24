@@ -82,7 +82,7 @@ const PostCard = () => {
           boxShadow={"lg"}
           bg={"white"}
         >
-          <Flex mb={4} alignItems={"center"} justifyContent={"center"}  style={{ width: "50%", height: "50%"}}>
+          <Flex mb={4} alignItems={"center"} justifyContent={"center"}>
             <Image
               src={post.imageurl}
               alt="Post Image"
